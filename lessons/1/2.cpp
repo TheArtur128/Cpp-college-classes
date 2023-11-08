@@ -30,3 +30,13 @@ void WriteNewBalance(int newBalance)
 {
     cout << "Теперь у вас " << newBalance << " деняк" << endl;
 }
+
+void main()
+{
+    setlocale(LC_ALL, "Russian");
+
+    int balance = ReadBalance();
+    int transaction = ReadTransaction();
+
+    WriteNewBalance(DoTransaction(balance, transaction));
+}
