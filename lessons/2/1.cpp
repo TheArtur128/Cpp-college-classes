@@ -28,8 +28,6 @@ void OnOverflow(int &_)
 void Do(int &refBoxCount)
 {
     int *pNumberOfLoadedBoxes;
-    
-    cout << refBoxCount;
 
     do {
         WriteNumberOfLoadedBoxesTo(*pNumberOfLoadedBoxes);
